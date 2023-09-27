@@ -15,12 +15,12 @@ Then('I see {string}', (seeText) => {
 
 //#region .: Successfully access the actions page :.
 
-Given ('I navigate to the Product menu', () => {
-  I.moveCursorTo(githubPage.productMenu);
+Given ('I navigated to the primary menu {string}', (primaryMenu) => {
+  githubPage.navigatedPrimaryMenu(primaryMenu)
 })
         
-When ('I click on the Actions menu', () => {
-  I.click(githubPage.actionsMenu);
+When ('I click on the {string} menu', (menuName) => {
+  githubPage.clickMenu(menuName)
   I.wait(5)
 })
 
