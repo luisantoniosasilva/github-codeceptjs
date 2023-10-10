@@ -14,7 +14,7 @@ Feature: Navigate GitHub
     Scenario: Successfully access the packages page
         And I navigated to the primary menu "Product"
         When I click on the "Packages" menu
-        Then I see "GitHub oie Packages"
+        Then I see "GitHub Packages"
 
     Scenario: Successfully access the security page
         And I navigated to the primary menu "Product"
