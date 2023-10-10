@@ -12,7 +12,6 @@ Then('I see {string}', (seeText) => {
 
 //#endregion
 
-
 //#region .: Successfully access the actions page :.
 
 Given ('I navigated to the primary menu {string}', (primaryMenu) => {
