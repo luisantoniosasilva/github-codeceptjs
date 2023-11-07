@@ -1,18 +1,18 @@
 const { I } = inject();
 
 module.exports = {
-    fileds:{
+    fields:{
         signIn: '//input[@type="submit"]',
         email: '//input[@id="login_field"]',
         pass: '//input[@id="password"]',
     },
 
     clickSignIn(){
-        I.click(this.fileds.signIn);
+        I.click(this.fields.signIn);
     },
 
     login(user, senha){
-        I.fillField(this.fileds.email, user);
-        I.fillField(this.fileds.pass, senha);
+        I.fillField(this.fields.email, user);
+        I.fillField(this.fields.pass, senha);
     }
 }

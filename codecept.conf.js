@@ -4,13 +4,14 @@ exports.config = {
     Puppeteer: {
       url: 'https://github.com',
       show: true,
-      windowSize: '1615x900'
+      windowSize: '1920x1080'
     }
   },
   include: {
     I: './steps_file.js',
     githubPage: "./pages/github.js",
-    loginPage: "./pages/loginPage.js"
+    loginPage: "./pages/loginPage.js",
+    signUpPage: "./pages/signUpPage.js"
   },
   mocha: {},
   bootstrap: null,
@@ -19,7 +20,9 @@ exports.config = {
   hooks: [],
   gherkin: {
     features: './features/*.feature',
-    steps: ['./step_definitions/steps.js', './step_definitions/loginSteps.js']
+    steps: ['./step_definitions/steps.js', 
+    './step_definitions/loginSteps.js',
+    './step_definitions/signUpSteps.js']
   },
   plugins: {
     screenshotOnFail: {
