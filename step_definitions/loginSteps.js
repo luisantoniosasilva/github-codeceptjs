@@ -3,7 +3,6 @@ const { I, loginPage } = inject();
 Given('I access login page', () => {
     I.amOnPage('/');
     loginPage.clickSignInOnHomePage()
-    //I.click("//a[contains(.,'Sign in')]")
   })
 
 
@@ -20,10 +19,6 @@ Then('I see {string}', (seeText) => {
 Given('I fill in username with {string} and password with {string}', (user, senha) =>{
     loginPage.fillLoginFilds(user, senha)
   })
-  
-//Given('I fill password field {string}', (senha) =>{
- //   loginPage.password(senha)
- // })
   
 When('I click Sign in', () => {
     loginPage.clickSignIn()
