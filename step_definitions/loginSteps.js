@@ -2,7 +2,8 @@ const { I, loginPage } = inject();
 
 Given('I access login page', () => {
     I.amOnPage('/');
-    I.click("//a[contains(.,'Sign in')]")
+    loginPage.clickSignInOnHomePage()
+    //I.click("//a[contains(.,'Sign in')]")
   })
 
 
@@ -17,7 +18,7 @@ Then('I see {string}', (seeText) => {
 //#region .: Performing a login attempt with incorrect data :.
 
 Given('I fill in username with {string} and password with {string}', (user, senha) =>{
-    loginPage.login(user, senha)
+    loginPage.fillLoginFilds(user, senha)
   })
   
 //Given('I fill password field {string}', (senha) =>{
